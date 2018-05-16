@@ -2,7 +2,6 @@ $o = New-Object -comobject outlook.application
 $n = $o.GetNamespace("MAPI")
 #$f = $n.PickFolder()
 $f = $n.Folders.Item("username@domain.com").Folders.item("Reports").Folders.item("Application_Folder").Folders.item("Systems")
-#$f = $n.Folders.Item(2).Folders.item("Reports").Folders.item("Tripwire").Folders.item("ESA Systems")
 $filepath = "C:\Users\username\Desktop\"
 #write-host $f
 if ($args){
